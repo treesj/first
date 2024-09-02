@@ -1,0 +1,19 @@
+meta {
+  name: Create a New Order
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/orders
+  body: json
+  auth: none
+}
+
+body:json {
+     {
+      "description": "last order",
+      "price": 200.0
+  }
+  
+}
